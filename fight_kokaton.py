@@ -137,11 +137,11 @@ class Beam:
 
 
 def draw_text(screen,x,y,text,size,col):#文字表示の関数
-        font = pygame.font.Font(None,size)
-        s = font.render(text,True,col)
-        x = x - s.get_width()/2
-        y = y - s.get_height()/2
-        screen.blit(s,[x,y])
+        font = pg.font.Font(None,size) #サイズの定義
+        s = font.render(text,True,col)　
+        x = x - s.get_width()/2 #指定した場所をわりやすくする
+        y = y - s.get_height()/2#指定した場所をわりやすくする
+        screen.blit(s,[x,y]) #中心に出てくる
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
